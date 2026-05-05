@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:app_recetas/screens/recipe_list_screen.dart';
 import 'package:app_recetas/providers/recipe_provider.dart';
+import 'package:app_recetas/themes/theme.dart';
 
 
 
@@ -24,13 +25,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Aplicacion de Recetas',
+      title: 'App de Recetas',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-
+      theme: AppTheme.lightTheme,
       home: RecipeListScreen()
     );
   }
 }
+
